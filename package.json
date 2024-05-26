@@ -1,0 +1,16 @@
+{
+  "name": "rafaph-devcontainer-images",
+  "private": true,
+  "version": "1.0.0",
+  "description": "rafaph's Devcontainer Images",
+  "scripts": {
+    "build": "devcontainer build --workspace-folder src/base-ubuntu --image-name ghcr.io/rafaph/devcontainer-images:base-ubuntu",
+    "push": "docker push ghcr.io/rafaph/devcontainer-images:base-ubuntu",
+    "build-and-push": "npm run build && npm run push"
+  },
+  "author": "Raphael Castro (https://github.com/rafaph)",
+  "license": "MIT",
+  "dependencies": {
+    "@devcontainers/cli": "~0.60.0"
+  }
+}

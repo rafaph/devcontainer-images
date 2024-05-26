@@ -1,0 +1,38 @@
+{
+    "build": {
+        "dockerfile": "./Dockerfile",
+        "context": "."
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "configureZshAsDefaultShell": "true",
+            "installOhMyZsh": "true",
+            "upgradePackages": "true",
+            "username": "vscode"
+        },
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest",
+            "ppa": "false"
+        },
+        "ghcr.io/rafaph/devcontainer-features/goose-cli:1": {},
+        "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+            "plugins": "git git-flow F-Sy-H zsh-autosuggestions zsh-completions",
+            "omzPlugins": "https://github.com/z-shell/F-Sy-H https://github.com/zsh-users/zsh-autosuggestions https://github.com/zsh-users/zsh-completions"
+        },
+        "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
+        "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
+        "./post-install": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "natqe.reload"
+            ],
+            "settings": {
+                "terminal.integrated.fontFamily": "Roboto Mono for Powerline"
+            }
+        }
+    },
+    "remoteUser": "vscode"
+}

@@ -1,0 +1,10 @@
+{
+    "description": "Install/enable some dependencies",
+    "id": "post-install",
+    "name": "post-install",
+    "version": "1.0.0",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/meaningful-ooo/devcontainer-features/homebrew"
+    ]
+}
