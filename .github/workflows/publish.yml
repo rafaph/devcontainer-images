@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  buuild-and-push-image:
+  build-and-push-image:
     runs-on: ubuntu-latest
     permissions:
       packages: write
