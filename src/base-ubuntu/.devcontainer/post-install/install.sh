@@ -2,12 +2,6 @@
 
 set -e
 
-# powerline fonts for zsh agnoster theme
-git clone https://github.com/powerline/fonts.git
-cd fonts
-./install.sh
-cd .. && rm -rf fonts
-
 # update theme
 sed -i '/^ZSH_THEME/c\ZSH_THEME="agnoster"' /home/vscode/.zshrc
 
