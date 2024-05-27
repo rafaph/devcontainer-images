@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "rafaph's Devcontainer Images",
   "scripts": {
-    "build": "devcontainer build --workspace-folder src/base-ubuntu --platform linux/amd64,linux/arm64 --image-name ghcr.io/rafaph/devcontainer-images:base-ubuntu",
+    "build": "devcontainer build --workspace-folder src/base-ubuntu --platform linux/amd64,linux/arm64 --output type=docker --image-name ghcr.io/rafaph/devcontainer-images:base-ubuntu",
     "push": "docker push ghcr.io/rafaph/devcontainer-images:base-ubuntu",
     "build-and-push": "npm run build && npm run push"
   },
