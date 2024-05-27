@@ -20,7 +20,6 @@
             "plugins": "git git-flow F-Sy-H zsh-autosuggestions zsh-completions",
             "omzPlugins": "https://github.com/z-shell/F-Sy-H https://github.com/zsh-users/zsh-autosuggestions https://github.com/zsh-users/zsh-completions"
         },
-        "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
         "./post-install": {}
     },
     "customizations": {
