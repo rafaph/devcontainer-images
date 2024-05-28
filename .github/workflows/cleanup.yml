@@ -7,6 +7,8 @@ jobs:
   delete-untagged-images:
     name: Delete Untagged Images
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     steps:
       - uses: dataaxiom/ghcr-cleanup-action@v1
         with:
